@@ -1,0 +1,107 @@
+body{
+    background-color: #ACEBFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* untuk jam */
+
+.wadah-jam{
+    background: #BE8B27;
+    border-radius: 411px 411px 24px 24px;
+    margin-top: 40px;
+    margin-left: 30px;
+    width: 311px;
+    height: 341px;
+    display: inline-block;
+    float: left;
+}
+.jam{
+    height: 225px;
+    width: 225px;
+    border-radius: 50%;
+    margin: auto;
+    top: 23px;
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.jarum-detik, .jarum-menit{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.jarum-detik .jarum{
+    position: absolute;
+    left: 50%;
+    top: 9%;
+    transform: translateX(-50%);
+    height: 110px;
+    width: 5px;
+    border: 1px solid black;
+    background-color: black;
+}
+.jarum-menit .jarum{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    height: 100px;
+    width: 5px;
+    border: 1px solid black;
+    background-color: black;
+}
+
+/* untuk tombol */
+.button-colection{
+    width: 255px;
+    height: 40px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    height: 40px;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    border:none;
+    width: 80px;
+    font-size: 12pt;
+}
+.btn:active{
+    box-shadow: none;
+}
+.flag{
+    color:#7F6302;
+    background: #69E91B;    
+}
+.reset{
+    color:#7F6302;
+    background-color: #8be1ee;
+}
+.stop{
+    color:#7F6302;
+    background-color:#FBFF40;
+}
+
+
+/* untuk waktu yang berjalan dan di flag */
+.wadah-waktu{
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.waktu h2{
+    font-size: 32pt;
+    margin: 0 auto;
+}
+.waktu-flag{
+    height: 220px;
+    overflow-y: auto;
+}
+.waktu-flag p{
+    margin: 5px 0;
+    font-style: italic;
+}
